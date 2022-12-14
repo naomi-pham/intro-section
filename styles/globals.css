@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --color-light: 0 0% 98%;
+    --color-dark: 0 0% 8%;
+    --color-neutral: 0 0% 41%;
+  }
+}
+
+*, html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(var(--color-neutral) / 100);
+  line-height: 1.7;
+  background-color: hsl(var(--color-light) / 100);
+}
+
+h1 {
+  @apply font-bold text-dark
+}
+
+a:hover,
+img:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(var(--color-dark) / 100);
+}
+
