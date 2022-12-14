@@ -2,9 +2,9 @@ import React from 'react'
 
 const Button = ({children, bgColor, textColor, width, border}) => {
     return (
-        <button className={`${width} ${bgColor} ${textColor} ${border ? "border border-dark" : ""} rounded-lg px-3 py-1`}>
+        <div className={`${width} ${bgColor} ${textColor} ${border ? "border border-dark" : ""} rounded-lg px-5 py-1.5 cursor-pointer`}>
             {children}
-        </button>
+        </div>
     )
 }
 

@@ -3,8 +3,8 @@ import Button from '../../Button/Button'
 
 const IntroText = ({intro}) => {
     return (
-        <article className='flex flex-col gap-4 sm:gap-8 text-center lg:text-left'>
-            <h2 className='text-3xl sm:text-6xl'>
+        <article className='flex flex-col gap-4 sm:gap-8 lg:gap-10 text-center lg:text-left'>
+            <h2 className='text-3xl sm:text-6xl lg:text-7xl'>
                 Make
                 {" "}
                 <span className='lg:block'>
