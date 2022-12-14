@@ -6,14 +6,14 @@ const NavItemsRight = ({col}) => {
     return (
         <ul className={`flex gap-2 ${col ? "flex-col" : ""}`}>
             <li>
-                <Link href="/login">
-                    <Button width="w-full" value="Login" />
-                </Link>
+                <Button width="w-full">
+                    <Link href="/login">Login</Link>
+                </Button>
             </li>
             <li>
-                <Link href="/register">
-                    <Button width="w-full" value="Register" border />
-                </Link>
+                <Button width="w-full" border>
+                    <Link href="/login">Register</Link>
+                </Button>
             </li>
         </ul>
     )

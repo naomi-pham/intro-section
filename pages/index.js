@@ -14,8 +14,16 @@ export default function Home() {
       </Head>
 
       <div className={`h-screen sm:h-full py-1 ${isShown ? "bg-neutral/80 lg:bg-inherit" : ""}`}>
-        <Nav nav={Data.nav} isShown={isShown} toggleMenu={toggleMenu} />
-        <Intro intro={Data.intro} />
+        <header>
+          <Nav 
+            nav={Data.nav} 
+            isShown={isShown} 
+            toggleMenu={toggleMenu} 
+          />
+        </header>
+        <main>
+          <Intro intro={Data.intro} />
+        </main>
       </div>
       
     </>
