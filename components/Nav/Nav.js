@@ -3,7 +3,7 @@ import { NavDesktop, NavMobile } from './NavElements'
 
 const Nav = ({nav, isShown, toggleMenu}) => {
     return (
-        <nav className='flex justify-between items-center gap-12 text-base p-6 lg:px-10'>
+        <nav className='flex justify-between items-center gap-12 text-base py-8 px-6 lg:px-10'>
             <Link href="#">
                 <img
                     src="/images/logo.svg" 
