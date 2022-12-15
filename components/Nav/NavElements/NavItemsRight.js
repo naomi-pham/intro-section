@@ -1,21 +1,34 @@
-import Link from 'next/link'
 import React from 'react'
 import Button from '../../Button/Button'
 
+const links = [
+    {
+        id: 1,
+        href: "/login",
+        label: "Login",
+        border: false,
+    },
+    {
+        id: 2,
+        href: "/register",
+        label: "Register",
+        border: true
+    }
+]
+
 const NavItemsRight = ({col}) => {
     return (
-        <ul className={`flex gap-2 ${col ? "flex-col" : ""}`}>
-            <li>
-                <Button width="w-full">
-                    <Link href="/login">Login</Link>
+        <div className={`flex gap-2 ${col ? "flex-col" : ""}`}>
+            {links.map(link => (
+                <Button 
+                    key={link.id}
+                    href={link.href} 
+                    border={link.border} 
+                >
+                    {link.label}
                 </Button>
-            </li>
-            <li>
-                <Button width="w-full" border>
-                    <Link href="/login">Register</Link>
-                </Button>
-            </li>
-        </ul>
+            ))}
+        </div>
     )
 }
 

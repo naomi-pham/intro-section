@@ -1,10 +1,13 @@
-import React from 'react'
+import Link from 'next/link'
 
-const Button = ({children, bgColor, textColor, width, border}) => {
+const Button = ({children, href, bgColor, textColor, width, border}) => {
     return (
-        <div className={`${width} ${bgColor} ${textColor} ${border ? "border border-dark" : ""} rounded-lg px-5 py-1.5 cursor-pointer`}>
+        <Link 
+            href={href}
+            className={`${width} ${bgColor} ${textColor} ${border ? "border border-dark" : ""} text-center rounded-lg px-4 py-1.5 cursor-pointer`}
+        >
             {children}
-        </div>
+        </Link>
     )
 }
 

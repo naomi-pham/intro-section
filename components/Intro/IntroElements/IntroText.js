@@ -14,16 +14,15 @@ const IntroText = ({intro}) => {
             <p className='lg:w-9/12 text-base sm:text-lg text-neutral'>
                 {intro.description}
             </p>
-            <div className='self-center lg:self-start'>
-                <Button
-                    bgColor="bg-dark hover:bg-light"
-                    textColor="text-white hover:text-dark"
-                    border
-                    width="w-fit"
-                >
-                    {intro.action}
-                </Button>
-            </div>
+            <Button
+                bgColor="bg-dark hover:bg-light"
+                textColor="text-white hover:text-dark"
+                border
+                width="w-fit self-center lg:self-start"
+                href="#"
+            >
+                {intro.action}
+            </Button>
         </article>
     )
 }
